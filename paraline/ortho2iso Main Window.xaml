@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="paraline.IsoMaker_Main_Window" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Height="174"
+	Width="266"
+	Title="Choose a view"
+	WindowStartupLocation="CenterOwner"
+	WindowStyle="ToolWindow">
+    <Grid Margin="0">
+        <Button
+			Content="Top"
+			Name="Top_Button"
+			Click="Top_Button_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="100,7,0,0"
+			Height="64" RenderTransformOrigin="0.5,0.5" Width="64" FontSize="16">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.866025403784439"/>
+                    <SkewTransform AngleX="30"/>
+                    <RotateTransform Angle="-30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button
+			Content="Left"
+			Name="Left_Button"
+			Click="Left_Button_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			Margin="69,59,0,0"
+			Width="64" RenderTransformOrigin="0.5,0.5" Height="64" VerticalAlignment="Top" FontSize="16" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.866025403784439"/>
+                    <SkewTransform AngleX="30"/>
+                    <RotateTransform Angle="30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button
+			Content="Right"
+			Name="Right_Button"
+			Click="Right_Button_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			Margin="130,60,0,0" RenderTransformOrigin="0.5,0.5" Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64" FontSize="16" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.866025403784439"/>
+                    <SkewTransform AngleX="-30"/>
+                    <RotateTransform Angle="-30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <CheckBox
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			Margin="183,10,0,0"
+			Width="79"
+			Content="Delete&#xD;&#xA;originals?"
+			Name="CB_delete" Height="37" VerticalAlignment="Top" />
+        <CheckBox
+			Grid.Column="0"
+			Grid.Row="0"
+			Margin="10,10,0,0"
+			Name="CB_outline"
+			Content="Outline&#xD;&#xA;regions?" HorizontalAlignment="Left" Width="71" Height="33" VerticalAlignment="Top" />
+        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+    </Grid>
+</Window>

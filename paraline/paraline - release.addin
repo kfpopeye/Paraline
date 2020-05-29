@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+<AddIn Type="Application">
+<Name>Paraline</Name>
+<Assembly>C:\Users\User\Documents\pkh Lineworks\Projects\Paraline 2020\paraline\bin\x64\Release\paraline_locked\paraline.dll</Assembly>
+<AddInId>6e5af375-300e-5716-9568-46d1955149df</AddInId>
+<FullClassName>paraline.paraline</FullClassName>
+<VendorId>PKHL</VendorId>
+<VendorDescription>pkh Lineworks, www.facebook.com/pkhlineworks</VendorDescription>
+</AddIn>
+</RevitAddIns>
